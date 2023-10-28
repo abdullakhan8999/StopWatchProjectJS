@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+      <span class="container__title">Countdown Timer</span>
+
+      <div class="container__labels">
+         <p class="container__labels--label">HH</p>
+         <p class="container__inputs--colon">:</p>
+         <p class="container__labels--label">MM</p>
+         <p class="container__inputs--colon">:</p>
+         <p class="container__labels--label">SS</p>
+      </div>
+
+      <div class="container__inputs">
+         <input type="number" maxlength="2" oninput="this.value=this.value.slice(0,this.maxLength)" placeholder="00"
+            class="container__inputs--time hours" />
+         <p class="container__inputs--colon">:</p>
+         <input type="number" maxlength="2" oninput="this.value=this.value.slice(0,this.maxLength)" placeholder="00"
+            class="container__inputs--time minutes" />
+         <p class="container__inputs--colon">:</p>
+         <input type="number" maxlength="2" oninput="this.value=this.value.slice(0,this.maxLength)" placeholder="00"
+            class="container__inputs--time seconds" />
+      </div>
+
+      <div class="container__btns">
+         <button class="btn start">Start</button>
+         <button class="btn stop">Pause</button>
+         <button class="btn reset">Reset</button>
+      </div>
+
+      <div class="container__btns">
+         <button class="btn start Focus">Focus</button>
+         <button class="btn reset Break">Break</button>
+      </div>
+   </div>
+   <script src="index.js"></script>
+</body>
+
+</html>
